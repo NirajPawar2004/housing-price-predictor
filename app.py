@@ -68,4 +68,4 @@ input_df = pd.DataFrame([{
 # Predict
 if st.button("Predict House Price"):
     prediction = lr_model.predict(input_df)[0]
-    st.success(f"🏡 Predicted House Value: ₹{prediction:,.2f}")
+    st.success(f"🏡 Predicted House Value: ${prediction:,.2f}")
